@@ -1,0 +1,4 @@
+@extends('layout')
+@section('content')
+<div class="card p-4 mx-auto" style="max-width:700px"><h2>🌸 Add New Player</h2><form method="post" action="/students">@csrf<div class="row g-3"><div class="col-md-6"><label>Name</label><input name="name" class="form-control " required></div><div class="col-md-6"><label>Roll No</label><input name="roll_no" class="form-control " required></div><div class="col-md-6"><label>Class</label><input name="class_name" class="form-control " value="BS ADP IT" required></div><div class="col-md-6"><label>Email</label><input name="email" type="email" class="form-control "></div><div class="col-md-12"><label>Avatar Emoji</label><input name="avatar" class="form-control " value="🧑‍🎓"></div></div><button class="btn btn-primary mt-4">Save Player ✨</button></form></div>
+@endsection
